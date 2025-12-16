@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
-    "db": "node scripts/init_db.js"
+    "db": "node scripts/init_db.js",
+    "test:api": "cypress run --spec 'cypress/e2e/api.cy.js'",
+    "test:features": "cypress run --spec 'cypress/e2e/features/*.feature'",
+    "cypress:open": "cypress open"
   },
   "keywords": [],
   "author": "",
