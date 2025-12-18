@@ -11,7 +11,7 @@
 -Git: você encontra em: https://git-scm.com/downloads
 
 git clone https://github.com/fabioaraujoqa/qa-commerce.git
-```
+
 ```
 cd qa-commerce
 ```
@@ -24,7 +24,10 @@ npm install
 
 #### Para subir o servidor e o banco:
 ```
-npm start
+Entrar no diretório do projeto
+Ex: C:\Workspace\Desafio-Keegoo\qa-commerce> 
+Abrir o Terminal
+Digitar o comando  npm start
 ```
 ## Estrutura do Projeto
 
@@ -41,7 +44,10 @@ npm start
 ▶️ Executando os Testes
 ##1. Abrir Cypress em modo interativo
 ```
-npx cypress open
+Entrar no diretório do projeto
+Ex: C:\Workspace\Desafio-Keegoo\qa-commerce> 
+Abrir o Terminal
+Digitar o comando npx cypress open
 ```
 - Escolha E2E Testing
 - Selecione o navegador

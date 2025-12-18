@@ -3,9 +3,9 @@ describe("Testes de API - QA Commerce", () => {
   const baseUrl = "http://localhost:3000/api";
 
   it("POST - Login de usuário", () => {
-    cy.request("POST", `${baseUrl}/login`, {
-      email: "admin@qa.com",
-      password: "admin"
+    cy.request("POST", "/login", {
+    email: Cypress.env("email"),
+    password: Cypress.env("password")
     }).then((response) => {
       expect(response.status).to.eq(200);
       expect(response.body).to.have.property("token");
